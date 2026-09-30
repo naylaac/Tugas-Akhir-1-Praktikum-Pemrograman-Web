@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Data Mahasiswa</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas PPW E</h1>
+        <p>Sistem ini berisi informasi terkait data mahasiswa</p>
+
+        <img src="logo.png" width="50" height="50">
+    </header>
+
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="#informasi">Informasi Aplikasi</a></li>
+            <li><a href="#daftar-mahasiswa">Daftar Mahasiswa</a></li>
+            <li><a href="#form-tambah">Tambah Mahasiswa Baru</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="informasi">
+            <h2>Informasi Sistem</h2>
+            <p>Bagian ini berisi tentang informasi sistem</p>
+
+            <article>
+                <h3>Informasi Sistem</h3>
+                <p>ini merupakan bagian sistem informasi</p>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <section id="daftar-mahasiswa">
+            <h2>Daftar Mahasiswa Aktif</h2>
+            <p>Bagian ini berisi daftar semua mahasiswa yang aktif</p>
+
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nomor</th>
+                        <th>Foto</th>
+                        <th>NPM</th>
+                        <th>Nama Lengkap</th>
+                        <th>Program Studi</th>
+                        <th>Angkatan</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="foto1.jpg" width="50" height="50"></td>
+                        <td>2415061001</td>
+                        <td>Edo</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td>edo@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><img src="foto1.jpg" width="50" height="50"></td>
+                        <td>2415061002</td>
+                        <td>Andre</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td>andre@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><img src="foto1.jpg" width="50" height="50"></td>
+                        <td>2415061003</td>
+                        <td>Yusuf</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td>yusuf@gmail.com</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="form-tambah">
+            <h2>Tambah Mahasiswa Baru</h2>
+            <p>Bagian ini digunakan untuk menambah mahasiswa baru</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Form Tambah Mahasiswa Baru</legend>
+
+                        <label for="npm">Nomor Induk Mahasiswa (NPM):</label><br>
+                        <input type="text" id="npm" name="npm" placeholder="Contoh : 2415061004" required pattern="[0-9]{8,12}" title="NPM harus berupa angka 8-12 digit"><br>
+                        <small>NPM harus berupa angka 8-12 digit</small><br><br>
+
+                        <label for="nama">Nama Lengkap:</label><br>
+                        <input type="text" id="nama" name="nama" placeholder="Contoh : Nayla Citra Andira" required minlength="3" maxlength="100"><br>
+                        <small>Isi nama dengan range minimal 3 sampai dengan 100</small><br><br>
+
+                        <label for="program-studi">Program Studi:</label><br>
+                        <select id="program-studi" name="program-studi" required>
+                            <option value="">Program Studi</option>
+                            <option value="Teknik Informatika">Tekniik Informatika</option>
+                        </select><br><br>
+
+                        <label for="angkatan">Tahun Angkatan:</label><br>
+                        <input type="number" id="angkatan" name="angkatan" placeholder="Contoh : 2024" required min="2018" max="2026"><br>
+                        <small>Berisi tahun angkatan 2018-2026</small><br><br>
+                        
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Contoh : email@example.com" required><br>
+                        <small>Isi dengan format email yang valid</small><br><br>
+
+                        <button type="submit">Simpan Data Mahasiswa</button>
+                        <button type="reset">Reset Formulir</button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+    </main>
+
+
+        
+</body>
+</html>
